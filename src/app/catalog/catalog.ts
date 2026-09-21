@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common'; // 1. Import CommonModule
+import { CommonModule } from '@angular/common'; 
 import { CatalogService } from '../services/catalog'; 
 @Component({
   selector: 'app-catalog',
   standalone: true,
-  imports: [CommonModule], // 2. Khai báo CommonModule vào đây
+  imports: [CommonModule],
   templateUrl: './catalog.html',
   styleUrl: './catalog.css'
 })
