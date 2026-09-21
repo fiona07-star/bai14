@@ -1,20 +1,13 @@
 <div *ngFor="let cate of categories; let i = index">
-  <!-- BẢNG TỔNG BAO BỌC MỖI DANH MỤC -->
   <table border="1" style="width: 60%; border-collapse: separate; border-spacing: 2px;">
-    
-    <!-- CHỈ HIỂN THỊ TIÊU ĐỀ NẾU LÀ DANH MỤC ĐẦU TIÊN (i === 0) -->
     <tr *ngIf="i === 0">
       <td style="width: 50%;">Ma Danh Muc</td>
       <td style="width: 50%;">Ten Danh Muc</td>
     </tr>
-
-    <!-- GIÁ TRỊ CỦA DANH MỤC (cate1, cate2,...) -->
     <tr>
       <td style="width: 50%;">{{ cate.Cateid }}</td>
       <td style="width: 50%;">{{ cate.CateName }}</td>
     </tr>
-
-    <!-- BẢNG SẢN PHẨM CON LỒNG LIỀN BÊN DƯỚI -->
     <tr>
       <td colspan="2" style="padding: 0;">
         <table border="1" style="width: 100%; border-collapse: separate; border-spacing: 2px;">
